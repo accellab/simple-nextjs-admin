@@ -1,0 +1,135 @@
+.main__layout {
+  &--container {
+    height: 100vh;
+    display: flex;
+  }
+  &--side-menu {
+    width: 200px;
+    background-color: #eb3b5a;
+    color: #ffffff;
+    a {
+      display: block;
+      padding: 10px 1rem;
+      background-color: #fc5c65;
+      transition: all 300ms;
+      &:hover {
+        background-color: #f53b57;
+      }
+    }
+  }
+  &--content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow: scroll;
+    padding: 2rem;
+    .translation {
+      display: flex;
+    }
+  }
+}
+
+.home__section {
+  h1 {
+    margin-bottom: 2rem;
+  }
+  a {
+    &.m1 {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.list__item {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px 0;
+  border-bottom: 1px solid #eeeeee;
+  &:nth-child(odd) {
+    background-color: #f5f5f5;
+  }
+  &--row {
+    p,
+    a,
+    span {
+      font-size: 14px;
+    }
+    .item-heading {
+      font-weight: 700;
+    }
+    a {
+      cursor: pointer;
+      &:hover {
+        color: #eb3b5a;
+      }
+    }
+  }
+}
+.center {
+  text-align: center;
+}
+.w40 {
+  width: 50px !important;
+}
+.w200 {
+  width: 200px !important;
+}
+.wfull {
+  flex: 1;
+}
+.mtop2 {
+  margin-top: 2rem;
+}
+.mbot1 {
+  margin-bottom: 1rem;
+}
+.mright1 {
+  margin-right: 0.5rem;
+}
+.btn {
+  padding: 8px 10px;
+  display: inline-block;
+  border-radius: 3px;
+  background: #778ca3;
+  font-size: 15px;
+  color: #fff;
+  transition: all 300ms;
+  cursor: pointer;
+  &:hover {
+    background: #4b6584;
+  }
+}
+
+.btn-large {
+  padding: 20px 30px;
+  font-size: 22px;
+  @extend .btn;
+}
+
+.modal__container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &--content {
+    position: relative;
+    background-color: #ffffff;
+    padding: 1rem;
+    h3 {
+      margin-bottom: 1rem;
+    }
+    .action__group {
+      text-align: right;
+    }
+  }
+  .close {
+    font-size: 20px;
+    text-align: right;
+  }
+}
