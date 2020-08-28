@@ -86,15 +86,6 @@ export default function Home({ translation }) {
           );
         })}
         <a
-          className='btn mtop2 mright1'
-          onClick={(e) => {
-            e.preventDefault();
-            setShowAddModal(true);
-          }}
-        >
-          + Add new translation
-        </a>
-        <a
           className='btn mtop2'
           onClick={(e) => {
             e.preventDefault();
